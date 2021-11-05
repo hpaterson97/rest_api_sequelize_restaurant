@@ -12,9 +12,9 @@ const connection = new Sequelize('db', 'user', 'pass', {
 });
 
 //instances of the models - the names of the variables are the names of the tables
-const Restaurant = connect.define('Restaurant', restaurantModel);
-const Menu = connect.define('Menu', menuModel);
-const MenuItem = connect.define('MenuItem', menuItemModel);
+const Restaurant = connection.define('Restaurant', restaurantModel);
+const Menu = connection.define('Menu', menuModel);
+const MenuItem = connection.define('MenuItem', menuItemModel);
 
 
 //defining the relationships between the tables
